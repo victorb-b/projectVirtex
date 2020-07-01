@@ -1,0 +1,562 @@
+/*Document CSS site Virtex*/
+
+/*RESET - CONFIGURAÇAO PADRAO*/
+*{
+	font-family: 'Lato', sans-serif;
+	font-size: 100%;
+	padding: 0; border: 0; margin: 0;
+	outline: none;
+	box-sizing: border-box; /*nao permite a expanção da div*/
+}
+
+body{
+	background-color: #fff;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+ 	text-decoration: none;
+ 	color: #525252;
+}
+
+ul{
+	list-style: none;
+}
+
+/*CABECALHO*/
+.cabecalho{
+	width: 100%;
+	float: left;
+	padding: 3% 4%;
+	background-color: #eee;
+}
+
+.logomarca{
+	float: left;
+	width: 98px;
+	height: 78px;
+	background-image: url(../Images/logo-mobile.fw.png);
+    font-size: 0;
+}
+
+.btn-movel{
+	width: 50px;
+	height: 50px;
+	background-image: linear-gradient(to right,#660000,#D40000);
+    color:#fff;
+    font-size: 1.5em;
+    float: right;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-movel-fechar{
+	float: right;
+	color: #fff;
+	font-size: 2em;
+    margin-top: 4%;
+    margin-right: 5.5%;
+}
+
+.menu{
+	width: 100%; height: 100%; 
+	left:0; top: 0; 
+	position: fixed;
+	background-color:rgba(0,0,0,0.7);
+	display: none;
+}
+
+.menu ul{
+	width: 100%;
+	text-align: center;
+	float:left;
+}
+
+.menu ul li{
+	padding: 1.5%;
+}
+
+.menu ul li a{
+	padding: 1.5%;
+	font-size: 2.0em;
+	color: #fff;
+}
+
+.menu ul li a:hover{
+	border:solid 1px #fff;
+	border-radius: 5px;
+}
+
+/* BANNER */
+
+.botoes{
+	width: 100%;
+}
+
+.banner{
+	width: 100%;
+	float: left;
+	padding: 3% 4%;
+	background-image: url(../Images/banner-mobile.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*
+.btn-banner i{
+	float: right;
+	margin-right: 5%;
+}*/
+
+.btn-banner{
+	background-color:rgba(0,0,0,0.7);
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	cursor: pointer;
+	font-size: 1.3em;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-radius: 5px;
+	transition-property: all;
+	transition-duration: 0.3s;
+}
+
+.btn-banner:hover{
+	background-color:rgba(0,0,0,0.9);
+	transition-property: all;
+	transition-duration: 0.3s;
+}
+
+.banner p{
+	width: 100%;
+	padding: 4%;
+	font-size: 2em;
+	text-align: center;
+	color: #333;
+	background-color:rgba(255,255,255,0.6);
+	margin-bottom: 50px;
+	border-radius: 5px;
+	font-style: italic;
+}
+
+.cl-b{ color: #0064B9 }
+.cl-o{ color: #EB6B0C }
+
+
+/* PLANOS */
+.planos{
+	width: 100%;
+	float: left;
+	padding: 3% 4%;	
+}
+
+.planos h2{
+	text-align: center;
+	font-size: 1.8em;
+	color:#333;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.box-planos{
+	width: 100%;
+	padding: 3%;
+	float: left;
+	border-top:solid 8px #B20013;
+	color:#333;
+	box-shadow: 1px 1px 10px #666;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.box-planos:hover{
+	border-top:solid 8px #EB6B0C;
+	box-shadow: 1px 1px 10px #000;
+}
+
+.box-planos h3{
+	font-size: 1.6em;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+.desc{
+	font-size: 1.2em;	
+	margin-bottom: 20px;
+	width: 70%;
+}
+
+.box-planos strong{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.desconto{
+	width: 50%;
+	height: 40px;
+	padding: 2%;
+	background-color:#FEE67C; 
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.box-planos button{
+	background-color: #B20013;
+	color: #FFF;
+	width: 100%;
+	height: 45px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.3em;
+
+	transition-property: all;
+	transition-duration: 0.4s;
+
+}
+
+.box-planos button:hover{
+	background-image: linear-gradient(to right,#660000,#D40000);
+    transition-property: all;
+	transition-duration: 0.3s;
+}
+
+.box-planos ul li{
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+/*ATENDIMENTO*/
+.atendimento{
+	width: 100%;
+	padding: 3% 4%;
+	float:left;
+	background-image: linear-gradient(to top,#eee,#fff);
+}
+.atendimento h2{
+	text-align: center;
+	font-size: 1.8em;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	color: #333;
+}
+.atendimento p{
+	text-align: center;
+	color: #333;
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+.box-atend{
+	width: 100%;
+	padding: 3%;
+	float:left;
+}
+.box-atend li{
+	line-height: 25px;
+	font-size: 1.1em;
+	color:#333;
+	margin-bottom: 10px;
+	border-left: solid 3px #0064BB;
+	padding-left: 15px;
+}
+
+.box-atend strong{
+	color:#868686;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+.campo-atend{
+	width: 65%;
+	height: 50px;
+	border:solid 1px #ddd;
+	color:#444;
+	background-image: url(../Images/icone7.fw.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-position-x:10px;
+    background-position-y:5px;
+     font-size: 1.2em;
+}
+.btn-atend{
+	width: 30%;
+	height: 50px;
+    color: #fff;
+    background-image: linear-gradient(to top,#0165BB,#00468C);
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 5px;
+}
+
+/* SERVICOS */
+.servicos{
+	width: 100%;
+	padding: 3% 4%;
+	float:left;
+}
+
+
+
+.servicos h2{
+	text-align: center;
+	font-size: 1.8em;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.box-servicos{
+	width: 100%;
+	padding: 3%;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	text-align: center;
+	background-image: linear-gradient(to bottom,#eee,#fff);
+	border-radius: 8px;
+}
+
+.box-servicos h3{
+   font-size: 1.5em;
+   margin-bottom: 10px;
+   margin-top: 15px;
+   color: #313131;
+}
+
+.box-servicos p{
+	color: #313131;
+	line-height: 35px;
+}
+
+.box-servicos:hover{
+   background-image: linear-gradient(to bottom,#eee,#ccc);
+}
+
+
+/*RODAPE*/
+.rodape{
+	width: 100%;
+	padding: 3% 4%;
+	float:left;
+	background-color: #B00014;
+	color:#fff;
+}
+
+.rdp-text{
+	width: 100%;
+	float: left;
+	font-size: 1.3em;
+}
+
+.rdp-redes{
+	width: 160px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 130px;
+}
+.rdp-redes ul{
+	width: 100%;
+}
+.rdp-redes ul li{
+	float: left;
+}
+.rdp-redes ul li a{
+	color: #fff;
+	font-size: 1.5em;
+	margin-left: 5px;
+	margin-right: 5px;
+	opacity: 0.8;
+}
+.rdp-redes ul li a:hover{
+	opacity:  1.0
+}
+
+.content{
+	width: 100%;
+	height: 3% 4%; 
+	float: left;
+}
+
+.content h2{
+	text-align: center;
+	font-size: 1.8em;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 3px;
+	color: #000;
+}	
+
+/* MEDIAS QUERY'S */
+@media print{
+	.box-planos button{
+		display: none;
+	}
+    .box-planos strong{
+    	color:#000;
+    }
+
+}
+
+@media screen and (min-width: 568px){
+
+    .banner{
+	background-image: url(../Images/banner-desktop.png);
+}
+
+	}
+
+/* tablet */
+@media screen and (min-width: 768px){
+
+	.logomarca{
+	width: 367px;
+	height: 118px;
+	background-image: url(../Images/logo-desktop.fw.png);
+    font-size: 0;
+}
+
+.btn-movel{
+	width: 70px;
+	height: 70px;
+    font-size: 1.7em;
+    border-radius: 4px;
+}
+
+.btn-movel-fechar{
+	font-size: 3em;
+    margin-top: 4%;
+    margin-right: 5.5%;
+}
+
+.box-planos{
+	width: 40%;
+	padding: 3%;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	margin-right: 1%;
+	margin-left: 7%;
+}
+
+.box-atend{
+	width: 50%;
+	padding: 4%;
+	float:left;
+}
+
+.box-atend strong{
+	font-size: 1.5em;
+
+}
+
+.box-servicos{
+	width: 48%;
+	padding: 2%;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.rodape{
+	width: 100%;
+	padding: 3% 15%;
+}
+
+.rdp-text{
+	width: 70%;
+	float: left;
+	font-size: 1.4em;
+}
+
+.rdp-redes ul li a{
+	font-size: 1.5em;
+}
+
+.rdp-redes{
+	width: 160px;
+	float: right;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.banner p{
+	font-size: 2.5em;
+}
+
+.btn-banner{
+	width: 50%;
+	font-size: 1.3em;
+	margin: 2% 25%;
+}
+
+
+	}
+
+/* Desktop */
+@media screen and (min-width: 1024px){
+
+.btn-movel, .btn-movel-fechar{
+	display: none;
+}
+
+.menu{
+	width: auto; height: 40px; 
+	left:0; top: 0; 
+	position: relative;
+	background-color: #eee;
+	display: block;
+	float: right;
+	margin-right: 100px;
+}
+
+.menu ul{
+	width: 100%;
+	float:left;
+}
+
+.menu ul li{
+	padding: 0;
+	margin-top: 40px;
+	float: left;
+}
+
+.menu ul li a{
+	padding: 20px;
+	font-size: 1.5em;
+	color: #525252;
+}
+
+.menu ul li a:hover{
+	color: white; border: 0;
+	background-image: linear-gradient(to top, #660000, #D40000);
+}
+
+.atendimento h2{
+	font-size: 3em;
+}
+
+.box-atend li{
+	font-size: 1.5em;
+}
+
+.atendimento p{
+	font-size: 1.5em;
+}
+
+.box-servicos{
+	width: 30%;
+	padding: 0.5%;
+	margin-left: 30px; 
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.servicos h2{
+	font-size: 2.5em;
+}
+
+}
+
+
+
